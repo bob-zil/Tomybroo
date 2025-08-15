@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Brooo's Birthday</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="card">
+            <div class="outside">
+                  <div class="front">
+                        <p>Happy Birthday to you ah nob !</p>
+                        <div class="hearts">
+                              <span class="left-emojis">💙🫡</span>
+                              <span class="right-emojis">🎉🎉</span>
+                        </div>
+                        <div class="cake">
+                              <div class="top-layer">
+
+                              </div>
+                              <div class="middle-layer">
+
+                              </div>
+                              <div class="bottom-layer">
+
+                              </div>
+                              <div class="candle"></div>
+                              <div class="click-instruction">👆 Click to open your special message! 👆</div>
+                        </div>
+                  </div>
+                  <div class="back">
+
+                  </div>
+            </div>
+            <div class="inside">
+                  <p>Happy Birthday, bro! Wishing you lots of fun, happiness, and success this year. You’re the best!</p>
+                  <p style="margin-top: 20px; font-style: italic; color: #666;">From Your brother 🫡</p>
+                  <h1>&#127873;</h1>
+            </div>
+      </div>
+
+      <script>
+            const card = document.querySelector('.card');
+            let isOpened = false;
+
+            card.addEventListener('click', function() {
+                  if (isOpened) {
+                        card.classList.remove('opened');
+                        isOpened = false;
+                  } else {
+                        card.classList.add('opened');
+                        isOpened = true;
+                  }
+            });
+      </script>
+</body>
+</html>
